@@ -1,0 +1,163 @@
+@page {
+	margin: 0;
+	padding: 0;
+	size: a4 portrait;
+}
+
+@media print {
+	html {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#cv_content {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 0 auto;
+		padding: 0;
+		box-shadow: none;
+	}
+}
+
+body {
+	margin: 0;
+}
+
+#cv_content {
+	margin: 0 auto;
+	height: 297mm;
+	width: 210mm; 
+	box-shadow: 0 3px 8px -3px rgba(0,0,0,0.7);
+	line-height: 1.5;
+	font-size: 11px;
+}
+
+.section {
+	width: 100%;
+	margin-bottom: 5mm;
+}
+
+.info.section:first-of-type,
+#experience .section:first-of-type {
+	height: 200px;
+}
+
+.section > .title {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    font-weight: bold;
+}
+
+.section > .divisor {
+    border-bottom: solid 1px;
+    width: calc(100% + 2.5mm);
+}
+
+.row {
+    width: 100%;
+    margin-top: 1mm
+}
+
+#info {
+	height: calc(100% - 2.5mm - 2.5mm);
+	width: 50mm;
+	float: left;
+	padding: 2.5mm;
+	padding-left: 5mm;
+	background-color: rgba(0, 43, 60, 0.5);
+	color: white;
+}
+
+#experience {
+	height: calc(100% - 2.5mm - 2.5mm);
+	width: calc(100% - 50.1mm - 2.5mm*2 - 5mm*2);
+	float: right;
+	padding: 2.5mm;
+	padding-left: 5mm;
+
+}
+
+/*----- Info -----*/
+
+.info.section > div {
+    margin-bottom: 2mm;
+}
+
+.info.section > .title {
+	margin: 0;
+}
+
+.info.section .content .row {
+    margin: 0 0 1mm 1mm;
+}
+
+.info.section .content .row > * {
+    display: inline-block;
+}
+
+.info.section .content .row > i {
+    width: 8mm;
+    text-align: center;
+}
+
+#my_photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#my_photo img {
+	border-radius: 76px;
+	border: white solid 3px;
+}
+
+.skills-section > .title {
+    font-size: 14px;
+}
+
+.skills-section ul {
+	margin: 0;
+	padding-left: 30px;
+}
+
+/*----- Experience -----*/
+
+#name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#name > .title {
+	font-size: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#name > .subtitle {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+#experience .section .experience {
+    margin-top: 5mm;
+}
+
+#experience .section .content .row {
+    display: flex;
+}
+
+#experience .section .content .row > div:first-of-type {
+    width: 83px;
+	flex-shrink: 0;
+}
+#experience .section .content .title strong {
+    font-size: 12px;
+}
